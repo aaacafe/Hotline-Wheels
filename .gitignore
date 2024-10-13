@@ -30,7 +30,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Generated css/js files
-assets/**/*.js
-assets/**/*.css
