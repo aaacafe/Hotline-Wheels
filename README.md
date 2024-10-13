@@ -40,4 +40,6 @@ npm run shopify: This spins up your dev server for your Shopify theme. Be sure t
 
 Note* The SRC folder cannot handle nested files at present, I will need to improve the transpilation process
 
+Note** If you run into crlf errors, use the following command git config —global core.autocrlf false
+
 If you don't have Shopify CLI installed to your computer, navigate to the [installation page of Shopify CLI](https://shopify.dev/themes/tools/cli/installation).
