@@ -1,8 +1,6 @@
-# :wave: Say hi to Elizabeth :wave:
+# Hotline Wheels :wave:
 
-[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)
-
-This project is created and intended to be used for the [Shopify Theme Development – Online Store 2.0 + TailwindCSS course](https://weeklyhow.com/courses/)
+This project is created and based on [Shopify Theme Development – Online Store 2.0 + TailwindCSS course](https://weeklyhow.com/courses/)
 
 
 [Get the course!](https://weeklyhow.com/) | [Lessons covered](#lessons-covered) |
@@ -35,7 +33,7 @@ shopify theme init [ NAME OF YOUR THEME ] --clone-url https://github.com/polidar
 
 I use 2 terminal windows to run npm scripts I’ve added to package.json.
 ```sh
-npm run dev: This runs our Vite configuration and watches for changes.
+npm run dev: This runs our Vite configuration and watches for changes. vite is responsible for transpiling the ts into js (assets folder)
 
 npm run shopify: This spins up your dev server for your Shopify theme. Be sure to replace the —store flag with your Shopify store.
 ```
@@ -43,7 +41,3 @@ npm run shopify: This spins up your dev server for your Shopify theme. Be sure t
 Note* The SRC folder cannot handle nested files at present, I will need to improve the transpilation process
 
 If you don't have Shopify CLI installed to your computer, navigate to the [installation page of Shopify CLI](https://shopify.dev/themes/tools/cli/installation).
-
-## Not a student
-
-If you're not a student, you can still use this repository to start a new Shopify theme project. However, any issues that you will encounter throughout your development will not be supported as the instructor will only answer questions through the course's QnA page.
