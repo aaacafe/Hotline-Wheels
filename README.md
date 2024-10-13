@@ -33,6 +33,15 @@ To use this repository for making Shopify themes, use the following command of S
 shopify theme init [ NAME OF YOUR THEME ] --clone-url https://github.com/polidario/Elizabeth_Clean
 ```
 
+I use 2 terminal windows to run npm scripts I’ve added to package.json.
+```sh
+npm run dev: This runs our Vite configuration and watches for changes.
+
+npm run shopify: This spins up your dev server for your Shopify theme. Be sure to replace the —store flag with your Shopify store.
+```
+
+Note* The SRC folder cannot handle nested files at present, I will need to improve the transpilation process
+
 If you don't have Shopify CLI installed to your computer, navigate to the [installation page of Shopify CLI](https://shopify.dev/themes/tools/cli/installation).
 
 ## Not a student
