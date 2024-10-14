@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     {{ content_for_header }}
     <!-- Header hook for plugins -->
-    {{ 'application.css' | asset_url | stylesheet_tag }}
-    <script src="{{ 'application.js' | asset_url }}" defer></script>
+    {% render 'vite-tag' with 'application.css' %}
   </head>
-  <body class="bg-red-500 text-xl">
+  <body class="text-xl">
     <main role="main">
       {{ content_for_layout }}
+      {% render 'vite' with 'Header/header.tsx', props: '{{ "counter": 30, "test": true }}' | json  %}
     </main>
   </body>
 </html>

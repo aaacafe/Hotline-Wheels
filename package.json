@@ -4,20 +4,24 @@
   "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
   "main": "index.js",
   "scripts": {
-    "dev": "vite build --watch",
-    "shopify": "shopify theme dev --store=hotline-wheels",
-    "build": "tsc && vite build"
+    "shopify": "concurrently \"npm run dev\" \"shopify theme dev --store=hotline-wheels\"",
+    "dev": "npm run build && cross-env DEBUG=vite-plugin-shopify:* vite",
+    "build": "cross-env DEBUG=vite-plugin-shopify:* vite build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "type": "module",
   "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.20",
-    "fast-glob": "^3.3.2",
+    "cross-env": "^7.0.3",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.8"
+    "vite": "^5.0.0",
+    "vite-plugin-shopify": "^3.0.1"
   }
 }
