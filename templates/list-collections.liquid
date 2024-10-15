@@ -15,7 +15,7 @@
     {% endfor %}
   {% endunless %}
 
-  {% capture slides | | sort  %}
+  {% capture slides | sort  %}
     [
       {% for product in collection.products %}
               "{{ product | image_url }}"
