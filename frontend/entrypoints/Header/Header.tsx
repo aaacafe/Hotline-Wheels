@@ -1,5 +1,5 @@
 import React from "react"
-import render from "../application"
+import render from "../app"
 
 const Header = ({ counter, test }) => {
     return (

@@ -4,14 +4,14 @@
 {% endcomment %}
 {% assign path = vite-tag | replace: '~/', '../' | replace: '@/', '../' %}
 {% if path == "/frontend/entrypoints/Carousel/Carousel.tsx" or path == "Carousel/Carousel.tsx" %}
-  <script src="{{ 'Carousel-Bu1Xvz5p.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
-  <link rel="modulepreload" href="{{ 'application-CaW65AOi.js' | asset_url | split: '?' | first }}" crossorigin="anonymous">
+  <script src="{{ 'Carousel-BYwsOH7W.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
+  <link rel="modulepreload" href="{{ 'app-CaW65AOi.js' | asset_url | split: '?' | first }}" crossorigin="anonymous">
   {{ 'Carousel-CadXE96n.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
 {% elsif path == "/frontend/entrypoints/Header/Header.tsx" or path == "Header/Header.tsx" %}
-  <script src="{{ 'Header-DoWya3Sa.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
-  <link rel="modulepreload" href="{{ 'application-CaW65AOi.js' | asset_url | split: '?' | first }}" crossorigin="anonymous">
-{% elsif path == "/frontend/entrypoints/application.css" or path == "application.css" %}
-  {{ 'application-BmWBFtvj.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
-{% elsif path == "/frontend/entrypoints/application.tsx" or path == "application.tsx" %}
-  <script src="{{ 'application-CaW65AOi.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
+  <script src="{{ 'Header-BDfj5-db.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
+  <link rel="modulepreload" href="{{ 'app-CaW65AOi.js' | asset_url | split: '?' | first }}" crossorigin="anonymous">
+{% elsif path == "/frontend/entrypoints/app.css" or path == "app.css" %}
+  {{ 'app-BmWBFtvj.css' | asset_url | split: '?' | first | stylesheet_tag: preload: preload_stylesheet }}
+{% elsif path == "/frontend/entrypoints/app.tsx" or path == "app.tsx" %}
+  <script src="{{ 'app-CaW65AOi.js' | asset_url | split: '?' | first }}" type="module" crossorigin="anonymous"></script>
 {% endif %}

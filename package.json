@@ -7,7 +7,7 @@
     "vite-dev": "npm run vite-build && cross-env DEBUG=vite-plugin-shopify:* vite",
     "vite-build": "cross-env DEBUG=vite-plugin-shopify:* vite build",
     "dev": "concurrently \"npm run vite-dev\" \"shopify theme dev --store=hotline-wheels\"",
-    "build": "cp assets/.vite/* assets && npm run vite-build && shopify app build"
+    "build": " npm run vite-build && cp assets/.vite/* assets && shopify app build"
   },
   "dependencies": {
     "react": "^18.2.0",
