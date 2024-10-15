@@ -1,5 +1,5 @@
 {% for collection in collections %}
-  {% comment %} {% unless collection.handle == 'frontpage' %}
+  {% unless collection.handle == 'frontpage' %}
     {% capture collection_title %}{{ collection.title | escape }}{% endcapture %}
     <a href="{{ collection.url }}">More {{ collection_title }} &rsaquo;</a>
     {% for product in collection.products limit:5 %}
@@ -13,7 +13,7 @@
         </a>
       </div>
     {% endfor %}
-  {% endunless %} {% endcomment %}
+  {% endunless %}
 
   {% capture slides | | sort  %}
     [
@@ -22,7 +22,7 @@
               {% if forloop.last == false %},{% endif %}
       {%- endfor -%}
     ]
-{% endcapture %}
+  {% endcapture %}
 
   {% liquid
        render 'vite' with 'Carousel/carousel.tsx', slides: slides;
