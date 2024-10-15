@@ -18,6 +18,6 @@ assign name = file_name | split: '.' | first
 {% endif %}
 
 {% comment %} create root document {% endcomment %}   
-<div data-props='{ "slides": {{ slides }}, "counter": {{ counter }}, "test": {{ test }} }' id='{{ name | capitalize }}' ></div>
+<div data-reactProps='{ "slides": {{ slides }}, "counter": {{ counter }}, "test": {{ test }} }' id='{{ name | capitalize }}' ></div>
 
 {% render 'vite-tag' with vite %}
