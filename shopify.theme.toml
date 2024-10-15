@@ -1,0 +1,2 @@
+[commands]
+build = "npm run vite-build && shopify app build"

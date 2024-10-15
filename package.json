@@ -4,17 +4,18 @@
   "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
   "main": "index.js",
   "scripts": {
-    "shopify": "concurrently \"npm run dev\" \"shopify theme dev --store=hotline-wheels\"",
-    "dev": "npm run build && cross-env DEBUG=vite-plugin-shopify:* vite",
-    "build": "cross-env DEBUG=vite-plugin-shopify:* vite build"
+    "vite-dev": "npm run vite-build && cross-env DEBUG=vite-plugin-shopify:* vite",
+    "vite-build": "cross-env DEBUG=vite-plugin-shopify:* vite build",
+    "dev": "concurrently \"npm run vite-dev\" \"shopify theme dev --store=hotline-wheels\""
   },
   "dependencies": {
-    "concurrently": "^9.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "swiper": "^11.1.14"
   },
   "type": "module",
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "autoprefixer": "^10.4.20",

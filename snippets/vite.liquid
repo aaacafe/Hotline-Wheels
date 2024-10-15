@@ -1,26 +1,23 @@
 
 {% liquid 
-assign random_number = "now" | date: "%N" | modulo: 100
 assign path = vite | replace: '~/', '../' | replace: '@/', '../'
 assign file_name = path | split: '/' | last
 assign name = file_name | split: '.' | first
 %}
 
-{% comment %} create root document {% endcomment %}
-<div id="component-{{ random_number }}">    
-    <div id={{ name | capitalize }}></div>
-</div>
+{% if slides == nil %}
+    {% assign slides = false %}
+{% endif %}
 
-{% comment %} assign props to data attributes {% endcomment %}
-<script>
-    var props = JSON.parse({{ props |  json }} ? {{ props |  json }}.substring(1, {{ props |  json }}.length-1) : "{}")
-    var rootContainer = document.querySelector(`#component-{{ random_number }}`)
-    if(rootContainer) {
-        var root = rootContainer.querySelector(`#{{ name | capitalize }}`)
-        Object.keys(props).forEach(key => {
-            root.setAttribute(`data-${key}`, props[key]);
-        })
-    }
-</script>
+{% if counter == nil %}
+    {% assign counter = false %}
+{% endif %}
+
+{% if test == nil %}
+    {% assign test = false %}
+{% endif %}
+
+{% comment %} create root document {% endcomment %}   
+<div data-reactprops='{ "slides": {{ slides }}, "counter": {{ counter }}, "test": {{ test }} }' id='{{ name | capitalize }}' ></div>
 
 {% render 'vite-tag' with vite %}

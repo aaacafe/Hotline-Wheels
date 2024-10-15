@@ -14,4 +14,17 @@
       </div>
     {% endfor %}
   {% endunless %}
+
+  {% capture slides | | sort  %}
+    [
+      {% for product in collection.products %}
+              "{{ product | image_url }}"
+              {% if forloop.last == false %},{% endif %}
+      {%- endfor -%}
+    ]
+  {% endcapture %}
+
+  {% liquid
+       render 'vite' with 'Carousel/Carousel.tsx', slides: slides;
+  %}
 {% endfor %}
