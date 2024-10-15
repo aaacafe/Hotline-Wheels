@@ -1,0 +1,34 @@
+{
+  "frontend/entrypoints/Carousel/Carousel.tsx": {
+    "file": "Carousel-Bu1Xvz5p.js",
+    "name": "Carousel",
+    "src": "frontend/entrypoints/Carousel/Carousel.tsx",
+    "isEntry": true,
+    "imports": [
+      "frontend/entrypoints/application.tsx"
+    ],
+    "css": [
+      "Carousel-CadXE96n.css"
+    ]
+  },
+  "frontend/entrypoints/Header/Header.tsx": {
+    "file": "Header-DoWya3Sa.js",
+    "name": "Header",
+    "src": "frontend/entrypoints/Header/Header.tsx",
+    "isEntry": true,
+    "imports": [
+      "frontend/entrypoints/application.tsx"
+    ]
+  },
+  "frontend/entrypoints/application.css": {
+    "file": "application-BmWBFtvj.css",
+    "src": "frontend/entrypoints/application.css",
+    "isEntry": true
+  },
+  "frontend/entrypoints/application.tsx": {
+    "file": "application-CaW65AOi.js",
+    "name": "application",
+    "src": "frontend/entrypoints/application.tsx",
+    "isEntry": true
+  }
+}
