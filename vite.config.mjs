@@ -3,7 +3,7 @@ import shopify from 'vite-plugin-shopify'
 
 export default defineConfig({
   server: {
-    host: true
+    host: process.env.NODE_ENV === 'development' ? undefined : true
   },
   build: {
     emptyOutDir: false,
