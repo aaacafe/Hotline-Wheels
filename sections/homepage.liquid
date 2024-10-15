@@ -1,7 +1,7 @@
 <div class="homepage">
-  {% render 'vite' with '@/Header/header.tsx', props: '{{ "counter": 150, "test": false }}' | json  %}
+  {% render 'vite' with 'Header/Header.tsx', props: '{{ "counter": 150, "test": false }}' | json  %}
   <img height="25%" width="25%" src="{{ 'weeklyhow-logo.png' | asset_img_url: 'large' }}" class="logo">
   <h1>Welcome to Shopify Theme Development course!</h1>
   <p>{% render 'homepage-text' %}</p>
-  {% render 'vite' with '@/Header/header.tsx', props: '{{ "counter": 15, "test": true }}' | json  %}
+  {% render 'vite' with 'Header/Header.tsx', props: '{{ "counter": 15, "test": true }}' | json  %}
 </div>
