@@ -5,7 +5,19 @@ assign file_name = path | split: '/' | last
 assign name = file_name | split: '.' | first
 %}
 
+{% if slides == nil %}
+    {% assign slides = false %}
+{% endif %}
+
+{% if counter == nil %}
+    {% assign counter = false %}
+{% endif %}
+
+{% if test == nil %}
+    {% assign test = false %}
+{% endif %}
+
 {% comment %} create root document {% endcomment %}   
-<div data-props='{ "slides": {{ slides }} }' id='{{ name | capitalize }}' ></div>
+<div data-props='{ "slides": {{ slides }}, "counter": {{ counter }}, "test": {{ test }} }' id='{{ name | capitalize }}' ></div>
 
 {% render 'vite-tag' with vite %}
