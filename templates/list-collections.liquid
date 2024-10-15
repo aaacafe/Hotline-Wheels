@@ -15,6 +15,6 @@
     {% endfor %}
   {% endunless %}
 
-  {% render 'components/carousel', _products: collection.products %}
+  {% render 'carousel', _products: collection.products %}
   {% render 'vite' with 'Header/Header.tsx', counter: 15, test: true  %}
 {% endfor %}
