@@ -1,4 +1,4 @@
-{% paginate collection.products by 2 %}
+{% paginate collection.products by 10 %}
   <h1>{{ collection.title }}</h1>
   {% for product in collection.products %}
     <div>
@@ -16,3 +16,6 @@
     {{ paginate | default_pagination }}
   {% endif %}
 {% endpaginate %}
+
+{% render 'components/carousel', _products: collection.products %}
+{% render 'vite' with 'Header/Header.tsx', counter: 15, test: true  %}

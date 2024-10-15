@@ -1,0 +1,12 @@
+{% capture slides | sort  %}
+    [
+      {% for product in {{_products}} %}
+              "{{ product | image_url }}"
+              {% if forloop.last == false %},{% endif %}
+      {%- endfor -%}
+    ]
+  {% endcapture %}
+
+  {% liquid
+       render 'vite' with 'Carousel/Carousel.tsx', slides: slides;
+  %}

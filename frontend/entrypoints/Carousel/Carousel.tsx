@@ -5,7 +5,6 @@ import 'swiper/css/pagination'
 import { default as React, useRef } from 'react'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import render from '../app'
 
 interface ISlider {
   slides?: any[]
@@ -63,4 +62,4 @@ const Carousel = (props: ISlider) => {
   )
 }
 
-render(Carousel);
+export default Carousel

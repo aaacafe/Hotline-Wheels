@@ -15,16 +15,6 @@
     {% endfor %}
   {% endunless %}
 
-  {% capture slides | sort  %}
-    [
-      {% for product in collection.products %}
-              "{{ product | image_url }}"
-              {% if forloop.last == false %},{% endif %}
-      {%- endfor -%}
-    ]
-  {% endcapture %}
-
-  {% liquid
-       render 'vite' with 'Carousel/Carousel.tsx', slides: slides;
-  %}
+  {% render 'components/carousel', _products: collection.products %}
+  {% render 'vite' with 'Header/Header.tsx', counter: 15, test: true  %}
 {% endfor %}
