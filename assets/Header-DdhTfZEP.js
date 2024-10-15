@@ -1,0 +1,1 @@
+import{a as n,R as e}from"./application-CaW65AOi.js";const r=({counter:t,test:l})=>e.createElement("div",null,e.createElement("h1",null,"Vite + React + Shopify"),e.createElement("h1",null,l),e.createElement("p",null,t??0));n(r);

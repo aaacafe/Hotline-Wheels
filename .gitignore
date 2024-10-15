@@ -31,8 +31,3 @@ dist-ssr
 *.sln
 *.sw?
 .shopify
-
-# generated css and js files
-assets/*.css
-assets/*.js
-assets/.vite
