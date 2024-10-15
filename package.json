@@ -4,9 +4,9 @@
   "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
   "main": "index.js",
   "scripts": {
-    "vite-dev": "npm run build && cross-env DEBUG=vite-plugin-shopify:* vite",
+    "vite-dev": "npm run vite-build && cross-env DEBUG=vite-plugin-shopify:* vite",
     "vite-build": "cross-env DEBUG=vite-plugin-shopify:* vite build",
-    "shopify-dev": "concurrently \"npm run dev\" \"shopify theme dev --store=hotline-wheels\""
+    "shopify-dev": "concurrently \"npm run vite-dev\" \"shopify theme dev --store=hotline-wheels\""
   },
   "dependencies": {
     "concurrently": "^9.0.1",
