@@ -1,14 +1,14 @@
 {
-  "frontend/entrypoints/Carousel/carousel.tsx": {
-    "file": "carousel-Hp2ByuH2.js",
-    "name": "carousel",
-    "src": "frontend/entrypoints/Carousel/carousel.tsx",
+  "frontend/entrypoints/Carousel/Carousel.tsx": {
+    "file": "Carousel-Bu1Xvz5p.js",
+    "name": "Carousel",
+    "src": "frontend/entrypoints/Carousel/Carousel.tsx",
     "isEntry": true,
     "imports": [
       "frontend/entrypoints/application.tsx"
     ],
     "css": [
-      "carousel-CadXE96n.css"
+      "Carousel-CadXE96n.css"
     ]
   },
   "frontend/entrypoints/Header/Header.tsx": {
