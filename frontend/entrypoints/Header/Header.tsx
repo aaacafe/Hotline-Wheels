@@ -1,5 +1,4 @@
-import React from "react"
-import render from "../app"
+import React from "react";
 
 const Header = ({ counter, test }) => {
     return (
@@ -12,4 +11,4 @@ const Header = ({ counter, test }) => {
   )
 }
 
-render(Header)
+export default Header;

@@ -1,23 +1,27 @@
 {
+  "_index-B52nOzfP.js": {
+    "file": "index-B52nOzfP.js",
+    "name": "index"
+  },
   "frontend/entrypoints/Carousel/Carousel.tsx": {
-    "file": "Carousel-IYj_sw5O.js",
+    "file": "Carousel-BaGE6rCY.js",
     "name": "Carousel",
     "src": "frontend/entrypoints/Carousel/Carousel.tsx",
     "isEntry": true,
     "imports": [
-      "frontend/entrypoints/app.tsx"
+      "_index-B52nOzfP.js"
     ],
     "css": [
       "Carousel-CadXE96n.css"
     ]
   },
   "frontend/entrypoints/Header/Header.tsx": {
-    "file": "Header-R5fD2DtH.js",
+    "file": "Header-CA0uSBgv.js",
     "name": "Header",
     "src": "frontend/entrypoints/Header/Header.tsx",
     "isEntry": true,
     "imports": [
-      "frontend/entrypoints/app.tsx"
+      "_index-B52nOzfP.js"
     ]
   },
   "frontend/entrypoints/app.css": {
@@ -26,9 +30,14 @@
     "isEntry": true
   },
   "frontend/entrypoints/app.tsx": {
-    "file": "app-ByjMbbUM.js",
+    "file": "app-DunFlmrx.js",
     "name": "app",
     "src": "frontend/entrypoints/app.tsx",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_index-B52nOzfP.js",
+      "frontend/entrypoints/Carousel/Carousel.tsx",
+      "frontend/entrypoints/Header/Header.tsx"
+    ]
   }
 }

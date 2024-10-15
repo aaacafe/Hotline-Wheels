@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "vite-dev": "npm run vite-build && cross-env DEBUG=vite-plugin-shopify:* vite",
-    "vite-build": "cross-env DEBUG=vite-plugin-shopify:* vite build",
+    "vite-build": "node scripts/clean.js && cross-env DEBUG=vite-plugin-shopify:* vite build",
     "dev": "concurrently \"npm run vite-dev\" \"shopify theme dev --store=hotline-wheels\"",
     "add-generated-files": "git add ./assets/* && git add ./snippets/vite-tag.liquid"
   },
@@ -25,6 +25,7 @@
     "autoprefixer": "^10.4.20",
     "concurrently": "^9.0.1",
     "cross-env": "^7.0.3",
+    "node-delete": "^0.1.2",
     "postcss": "^8.4.47",
     "pre-commit": "^1.2.2",
     "tailwindcss": "^3.4.13",

@@ -19,6 +19,7 @@
   <body class="text-xl">
     <main role="main">
       {{ content_for_layout }}
+      {% render 'vite-tag' with 'app.tsx' %}
     </main>
   </body>
 </html>
