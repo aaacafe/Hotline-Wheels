@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "vite-dev": "npm run vite-build && cross-env DEBUG=vite-plugin-shopify:* vite",
-    "vite-build": "cross-env DEBUG=vite-plugin-shopify:* vite build",
-    "dev": "concurrently \"npm run vite-dev\" \"shopify theme dev --store=hotline-wheels\""
+    "vite-build": "cross-env DEBUG=vite-plugin-shopify:* vite build -- watch",
+    "dev": "concurrently \"npm run vite-dev\" \"shopify theme dev --store=hotline-wheels\"",
   },
   "dependencies": {
     "react": "^18.2.0",
