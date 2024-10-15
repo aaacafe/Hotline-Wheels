@@ -6,11 +6,15 @@ const render = (Component) => {
   const nodes = document.querySelectorAll(`#${Component.name}`) as any
 
   nodes.forEach(node => {
-    const props = Object.assign({}, node.dataset)
+    const props = node.dataset.props
+    const obj = JSON.parse(props);
+    Object.keys(obj).forEach((key) => {
+      obj[key] = obj[key];
+    });
 
   return ReactDOM.createRoot(node).render(
     <React.StrictMode>
-      <Component {...Object.assign({}, props) } />
+      <Component {...Object.assign({}, obj) } />
     </React.StrictMode>
   )
   });
