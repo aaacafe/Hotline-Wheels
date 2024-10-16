@@ -1,8 +1,6 @@
 # Hotline Wheels :wave:
 
-This project is created and based on [Shopify Theme Development – Online Store 2.0 + TailwindCSS course](https://weeklyhow.com/courses/), with an additional transpilation step so React components can be used within the repo.
-
-[Get the course!](https://weeklyhow.com/) | [How to use](#how-to-use)
+This project is created and based on [Shopify Theme Development – Online Store 2.0 + TailwindCSS course](https://www.udemy.com/course/shopify-theme-development-tailwindcss), with an additional transpilation step so React components can be used within the repo.
 
 ## How to use
 
