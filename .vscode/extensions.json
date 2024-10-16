@@ -1,8 +1,13 @@
 {
     "recommendations": [
+      "ecmel.vscode-html-css",
       "shopify.theme-check-vscode",
       "bradlc.vscode-tailwindcss",
-      "csstools.postcss"
+      "csstools.postcss",
+      "wix.vscode-import-cost",
+      "sissel.shopify-liquid",
+      "rvest.vs-code-prettier-eslint",
+      "killalau.vscode-liquid-snippets",
     ]
     // need to add all extensions that are useful to the recommended list
   }
